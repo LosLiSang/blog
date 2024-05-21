@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on LisangのBlog</title><link>https://loslisang.github.io/blog/post/</link><description>Recent content in Posts on LisangのBlog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 21 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://loslisang.github.io/blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>2023 Summary</title><link>https://loslisang.github.io/blog/p/2023-summary/</link><pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate><guid>https://loslisang.github.io/blog/p/2023-summary/</guid><description>&lt;img src="https://loslisang.github.io/blog/cover.jpg" alt="Featured image of post 2023 Summary" />&lt;h2 id="总结">总结
+&lt;/h2>&lt;p>23年是我本科毕业地一年，是疫情结束的一年，研究生入学的一年。今年我读了很多本书，和她去了很多地方，我觉得这就是我这一年最宝贵的，最有价值的东西。&lt;/p>
+&lt;h3 id="书籍">书籍
+&lt;/h3>&lt;p>就微信读书上，我就读了8本书《球状闪电》、《蛙》、《可能性的艺术》、《浅薄》、《浪潮之巅》、《置身事内》、《今日简史》等等，还有一些轻小说就不必翻出来讲了。其中大部分都是和社会相关的，批判现实的不公、贫富差距过大，还有讲述历史的优秀书籍。&lt;/p>
+&lt;p>&lt;img src="https://loslisang.github.io/blog/blog/image-20240112233753269.png"
+loading="lazy"
+alt="置身事内"
+>&lt;/p>
+&lt;h3 id="旅游">旅游
+&lt;/h3>&lt;p>今年去了赣州、广州、舟山、宁波、青岛、长沙、桂林、阳朔、柳州，很可惜我不是一个喜欢拍照的人，没有保留几张好看的照片，就用文字浅浅地记录一下今年地旅行。&lt;/p>
+&lt;p>为什么要去广州呢？因为她在，不在乎什么地点，其实只要有她就行，虽然去了很多次广州，但是丝毫没有厌倦这个城市，现在我还是怀念广州的美食：隆江猪脚饭、猪杂汤粉、牛肉稞条等等。最想的事情就是和她去吃海底捞，不知为什么，就是觉得在海底捞会很放松。广州的风土人情总让人很惬意。&lt;/p>
+&lt;p>舟山，在舟山我的印象估计只有那次早早起床去海边看的日出了吧，很震惊呀，感觉生活就是为此而存在的。日出和大海，总给人一种希望，一天刚刚开始，一切皆有可能。&lt;/p>
+&lt;p>宁波，我对宁波的印象估计也没啥，就只有酒店了吧😂。&lt;/p>
+&lt;p>青岛，青岛是我夏天去过最舒服的地方了吧，沙滩，海风，和舒适的气温，真想一辈子在青岛玩了，可惜就是青岛是个旅游城市，人真的很多。&lt;/p>
+&lt;p>长沙，橘子洲头，越往后人们应该会越来越想你吧。臭豆腐，黑色经典，传世美味，没有任何一个地摊能模仿。&lt;/p>
+&lt;p>桂林、阳朔、柳州。山和水确实好看，别的话就是骑着小电动兜风，让我有在农村的感觉。&lt;/p>
+&lt;h2 id="展望">展望
+&lt;/h2>&lt;p>最近正在认真学习日语，认真地改变自己，我希望在明年的这个时候，也就是25年初我写年度总结的时候，我可以不看字幕地听懂同人音声（毕竟我学日语的初心就是同人音声），至少在多邻国学完第四章吧，学三章。&lt;/p>
+&lt;p>我知道我的文笔很差劲，经常是上文不接下文，思维跳转很快，就多多看书、写文字，明年至少看个12本书吧🤭，写24篇博客哈🙂。&lt;/p>
+&lt;p>学术进展缓慢，职业规划不完全。我身边有很多值得我学习的同学，值得我追赶的同学，以他们为榜样，加油💪。&lt;/p>
+&lt;p>24年，少打一点游戏，如果不行就用VB脚本好好惩罚自己，毕竟VB确实很难关掉。&lt;/p></description></item><item><title>Untitled</title><link>https://loslisang.github.io/blog/p/untitled/</link><pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate><guid>https://loslisang.github.io/blog/p/untitled/</guid><description/></item><item><title>LeetCode 82. 删除排序链表中的重复元素 II</title><link>https://loslisang.github.io/blog/p/leetcode-82.-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0-ii/</link><pubDate>Mon, 15 Jan 2024 19:40:04 +0800</pubDate><guid>https://loslisang.github.io/blog/p/leetcode-82.-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0-ii/</guid><description>&lt;p>&lt;a class="link" href="https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/" target="_blank" rel="noopener"
+>82. 删除排序链表中的重复元素 II&lt;/a>&lt;/p>
+&lt;h2 id="题目描述">题目描述
+&lt;/h2>&lt;p>给定一个已排序的链表的头 &lt;code>head&lt;/code> ， &lt;em>删除原始链表中所有重复数字的节点，只留下不同的数字&lt;/em> 。返回 &lt;em>已排序的链表&lt;/em> 。&lt;/p>
+&lt;h3 id="示例">示例
+&lt;/h3>&lt;p>&lt;img src="https://loslisang.github.io/blog/blog/img/Pasted%20image%2020240115145926.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="题解">题解
+&lt;/h2>&lt;p>首先，链表是排序过的，所以相同的节点肯定是连续的，只需要遍历一遍就能把所有相同的节点删除&lt;/p>
+&lt;p>记pre为去重链表的遍历节点itr的前一个节点。（我们从前往后遍历，前面的链表就是去除过后的链表）&lt;/p>
+&lt;ol>
+&lt;li>如果itr.val == itr.next.val，那我们就记flag为当前遍历节点的值，令&lt;code>flag=itr.val&lt;/code>，不断向后遍历令itr = itr.next，直到，itr.next.val != flag 或者 itr.next == null。然后让pre.next = itr.next&lt;/li>
+&lt;li>如果itr.val != itr.next.val，那么就说明itr不是冗余节点，则不必删除，让pre = itr即可&lt;/li>
+&lt;/ol>
+&lt;h3 id="代码">代码
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">deleteDuplicates&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">flag&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">101&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">new&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">dummyNode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyNode&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">val&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">val&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">flag&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">val&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">val&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">flag&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="k">else&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyNode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>时间复杂度 O(n), 空间复杂度O(1)&lt;/p>
+&lt;h2 id="总结">总结
+&lt;/h2>&lt;p>链表的题通常需要注意两点：&lt;/p>
+&lt;ol>
+&lt;li>舍得用变量，千万别想着节省变量，否则容易被逻辑绕晕&lt;/li>
+&lt;li>head 有可能需要改动时，先增加一个 假head，返回的时候直接取 假head.next，这样就不需要为修改 head 增加一大堆逻辑了。&lt;/li>
+&lt;/ol></description></item><item><title>LeetCode 143. 重排链表</title><link>https://loslisang.github.io/blog/p/leetcode-143.-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</link><pubDate>Mon, 15 Jan 2024 19:32:06 +0800</pubDate><guid>https://loslisang.github.io/blog/p/leetcode-143.-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</guid><description>&lt;h2 id="题目描述">题目描述
+&lt;/h2>&lt;p>给定一个单链表 &lt;code>L&lt;/code> 的头节点 &lt;code>head&lt;/code> ，单链表 &lt;code>L&lt;/code> 表示为：&lt;/p>
+&lt;blockquote>
+&lt;p>L0 → L1 → … → Ln - 1 → Ln&lt;/p>
+&lt;/blockquote>
+&lt;p>请将其重新排列后变为：&lt;/p>
+&lt;blockquote>
+&lt;p>L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …&lt;/p>
+&lt;/blockquote>
+&lt;p>不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
+&lt;img src="https://loslisang.github.io/blog/blog/Pasted%20image%2020240115180529%201.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="题解">题解
+&lt;/h2>&lt;h3 id="解法一暴力解">解法一：暴力解
+&lt;/h3>&lt;p>第i次循环都把最后一个节点移动到第&lt;code>2*i-1&lt;/code>个节点后面，当然不是用for循环，只是代码运行的时候链表内部是这样的过程。&lt;/p>
+&lt;p>记itr为从前往后遍历的节点，只要itr.next不为null，就一直做以下循环&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>找到最后一个节点的前一个节点记为pre，最后一个节点记为last = pre.next&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>把最后一个节点删除，插入到第itr的后面&lt;/p>
+&lt;p>&lt;code>pre.next = last.next; last.next = itr.next; itr.next = last&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>令itr前移动两个单位itr = itr.next.next&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="代码">代码
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">lastPre&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">reorderList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">lastPre&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>时间复杂度 $O(N^2)$&lt;/p>
+&lt;h3 id="解法二">解法二
+&lt;/h3>&lt;ol>
+&lt;li>找中点，拆分链表&lt;/li>
+&lt;li>倒置后半段链表&lt;/li>
+&lt;li>合并两段链表&lt;/li>
+&lt;/ol>
+&lt;h4 id="找中点快慢指针法">找中点（快慢指针法）
+&lt;/h4>&lt;h5 id="eg1">eg1:
+&lt;/h5>&lt;p>1-&amp;gt;2-&amp;gt;3-&amp;gt;4&lt;/p>
+&lt;p>fast:1 slow:1&lt;/p>
+&lt;p>fast:3 slow:2&lt;/p>
+&lt;p>fast.next.next为null，终止循环&lt;/p>
+&lt;p>那么中点就记为mid = slow.next 为 3&lt;/p>
+&lt;h5 id="eg2">eg2:
+&lt;/h5>&lt;p>1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5&lt;/p>
+&lt;p>fast:1 slow:1&lt;/p>
+&lt;p>fast:3 slow:2&lt;/p>
+&lt;p>fast:5 slow:3&lt;/p>
+&lt;p>fast.next为null，终止循环&lt;/p>
+&lt;p>那么中点就记为mid = slow.next 为 4&lt;/p>
+&lt;p>拆分链表，slow.next = null;&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">getMid&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">slow&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">fast&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">fast&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">fast&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">slow&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">slow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">fast&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">fast&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">slow&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="倒置链表">倒置链表
+&lt;/h4>&lt;p>记后半段链表为back，前半段链表为front&lt;/p>
+&lt;p>倒置链表使用前插法&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">reverse&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyHead&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">new&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">temp&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyHead&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">dummyHead&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">temp&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyHead&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="合并链表">合并链表
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">merge&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l2&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">l2&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1Next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l2&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">l2&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l2&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1Next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="总结">总结
+&lt;/h2>&lt;ol>
+&lt;li>链表的赋值，其实和变量交换很类似，都是需要备份的。&lt;/li>
+&lt;li>封装好功能的函数，远远比一整段写出来的代码要更好理解！！&lt;/li>
+&lt;li>不用害怕定义变量，但是前提是你要知道这个变量是用来做什么的&lt;/li>
+&lt;/ol></description></item><item><title>23年信息奥数教学总结</title><link>https://loslisang.github.io/blog/p/23%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%A5%A5%E6%95%B0%E6%95%99%E5%AD%A6%E6%80%BB%E7%BB%93/</link><pubDate>Sun, 14 Jan 2024 18:38:40 +0800</pubDate><guid>https://loslisang.github.io/blog/p/23%E5%B9%B4%E4%BF%A1%E6%81%AF%E5%A5%A5%E6%95%B0%E6%95%99%E5%AD%A6%E6%80%BB%E7%BB%93/</guid><description>&lt;img src="https://loslisang.github.io/blog/94748376_p0.jpg" alt="Featured image of post 23年信息奥数教学总结" />&lt;p>说实话当一个老师还是不错的，但是前提是教的不是小学生。&lt;/p>
+&lt;h2 id="教学的收获">教学的收获
+&lt;/h2>&lt;h3 id="编程能力上的收获">编程能力上的收获
+&lt;/h3>&lt;p>感触最大的就是我有了一个大致的知识框架，什么OJ，无非就是学习基本语法之后去学数据结构和算法。我自己也在暑假的时候复习了一下动态规划和图的搜索，这一个是我编程能里最大的提升。CSP考试用的主要是C++语言，我不是很熟悉C++的语法和容器，有些代码就写的比较复杂。做题量其实也不算大，&lt;/p>
+&lt;h3 id="教学上的收获">教学上的收获
+&lt;/h3>&lt;p>因为我是作为一个老师去教学C++的知识，现在还主要是语法阶段，我感觉我教的就不算特别好，有些东西如果不在脑子里思考过一遍，还真的不一定能讲出来。&lt;/p>
+&lt;p>有一次就是讲&amp;quot;添加逗号&amp;quot;的问题，我就语塞了，之前只是自己做出来了，但是根本没想过怎么讲这道题目，这是最大的问题。自己理解了，但是还没有理解完全，不能够正常讲出来，让同学们听懂。&lt;/p>
+&lt;p>而且大班教学，很容易就产生能力不均匀的情况，很想把同学们统一起来讲，但是大家能力参差不齐，就会导致有些同学觉得太简单然后不听，进一步导致重要的东西他们没听到，我其实也很苦恼。&lt;/p>
+&lt;p>之后我教课的流程应该会大大改变，例如：强调做题，强调理解，而不是抄代码，当然让他们不得不抄代码就是因为我教的不算好。&lt;/p>
+&lt;p>讲题的步骤也可以进行改变，例如先做5min，然后讲思路，不写代码，再让他们做一会，最后写代码，不过这种教学方式应该对题目的要求比较大。&lt;/p>
+&lt;p>让他们做笔记，我自己也可以把笔记再课堂上做好然后发给他们，当作上课的讲义嘛。&lt;/p>
+&lt;h2 id="遇到的一些事情">遇到的一些事情
+&lt;/h2>&lt;h3 id="事件">事件
+&lt;/h3>&lt;p>这之中我遇到了一个同学，他上课看起来是在认真听课，但是实际上不是，也经常经常请假，导致在本身基础就不算好的情况，就完全跟不上课程的进度了。在最后的器模测试中，甚至连&lt;code>cout &amp;lt;&amp;lt; &amp;quot;ABCCD&amp;quot;;&lt;/code>都写不出来，最后呢，他被其他同学说是“零分大王”，虽然其他同学并不知道他是谁，但是就在教室里一直讲，这一点非常不好，但是我却默许了这种行为，我觉得我做的实在是太差劲了，没能制止其他同学对他的霸凌，最后下课的路上，他打了其他同学一拳，这个时候我还不知道，然后我才发现他不对劲了，他很委屈。我真的需要对此做出反思。&lt;/p>
+&lt;h3 id="反思">反思
+&lt;/h3>&lt;p>如果要反思的话，首先得要怪我。我自己不是很懂小学生的思维，作为一个老师我是不合格的，我对我的教学对象的心理了解的太少了，这是最基本的。&lt;/p>
+&lt;p>其次，绰号什么的，只有亲近的人说才会觉得舒服，如果是一个不认识的人这样说，只会认为是在嘲讽自己，我没有带入到他的处境里。现在仔细想想，给他起绰号的同学其实没啥恶意，但是没有把握好距离，如果他们俩是好朋友的话那应该没关系，问题就在于他们不是盆友。&lt;/p>
+&lt;h2 id="之后的打算">之后的打算
+&lt;/h2>&lt;p>教学可能确实不太适合我，但是我从中得到了很多锻炼，很多是为人处世的，和很多家长进行沟通，教导小学生，这都不简单。&lt;/p>
+&lt;p>之后我要提升自己的程序设计能力，就是多做OJ题，还要&lt;strong>多写题解&lt;/strong>，争取让不懂的人也能看懂，这才是一个做老师的正确姿势。&lt;/p>
+&lt;p>&lt;img src="https://loslisang.github.io/blog/blog/post/B-%e7%94%9f%e6%b4%bb/Summary/asset/102238754_p0.png"
+loading="lazy"
+>&lt;/p></description></item><item><title>clash在Linux中如何使用</title><link>https://loslisang.github.io/blog/p/clash%E5%9C%A8linux%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/</link><pubDate>Sat, 13 Jan 2024 00:09:24 +0800</pubDate><guid>https://loslisang.github.io/blog/p/clash%E5%9C%A8linux%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/</guid><description>&lt;h2 id="值得细讲的点">值得细讲的点
+&lt;/h2>&lt;ol>
+&lt;li>Linux的Clash，因为在github上，clash删库跑路了，所以现存的clash压缩包&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>wget https://github.com/Dreamacro/clash/releases/download/v1.14.0/clash-linux-amd64-v1.14.0.gz&lt;/code>&lt;/p>
+&lt;p>建议自己也存一份&lt;/p>
+&lt;p>&lt;code>curl https://glados.rocks/tools/clash-linux.zip -o clash.zip&lt;/code>&lt;/p>
+&lt;ol start="2">
+&lt;li>解压(unzip)&lt;/li>
+&lt;li>上传配置文件(就是机场订阅链接下载下来的哪个yaml文件)&lt;/li>
+&lt;li>启动&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>./clash-linux-amd64-v1.10.0 -f glados.yaml -d .&lt;/code>&lt;/p>
+&lt;ol start="5">
+&lt;li>设置环境变量&lt;/li>
+&lt;/ol>
+&lt;p>&lt;code>export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890&lt;/code>&lt;/p>
+&lt;h2 id="参考">参考
+&lt;/h2>&lt;p>&lt;a class="link" href="https://blog.iswiftai.com/posts/clash-linux/" target="_blank" rel="noopener"
+>在 Linux 中使用 Clash | CodeSwift (iswiftai.com)&lt;/a>&lt;/p></description></item><item><title>git分布式管理工具使用</title><link>https://loslisang.github.io/blog/p/git%E5%88%86%E5%B8%83%E5%BC%8F%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</link><pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate><guid>https://loslisang.github.io/blog/p/git%E5%88%86%E5%B8%83%E5%BC%8F%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</guid><description>&lt;h2 id="创建一个git仓库">创建一个git仓库
+&lt;/h2>&lt;p>git init
+git add (.) 提交到暂存区
+git commit -m &amp;lt;&amp;gt;&lt;/p>
+&lt;p>git log &amp;lt;&amp;ndash;stat&amp;gt;&lt;/p>
+&lt;p>&lt;code>git diff &amp;lt;commit-id&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git reset --hard &amp;lt;commit-id&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git checkout &amp;lt;commit-id&amp;gt;&lt;/code>&lt;/p>
+&lt;p>git branch&lt;/p>
+&lt;p>git checkout -b develop&lt;/p>
+&lt;p>$master git merge develop&lt;/p>
+&lt;h2 id="git-config">git config
+&lt;/h2>&lt;h3 id="修改某些属性">修改某些属性
+&lt;/h3>&lt;p>&lt;code>git config --global &amp;lt;properity&amp;gt; &amp;lt;value&amp;gt;&lt;/code>&lt;/p>
+&lt;p>eg:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git config --global user.name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global user.email
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global http.sslverify &lt;span class="nb">false&lt;/span> 关闭验证ssl证书
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global http.sslBackend schannel
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="查看属性">查看属性
+&lt;/h3>&lt;p>&lt;code>git config --list --show-origin&lt;/code>&lt;/p>
+&lt;h2 id="git-clone">git clone
+&lt;/h2>&lt;h3 id="携带参数">携带参数
+&lt;/h3>&lt;p>eg:
+git -c http.sslVerify=false clone &lt;code>&amp;lt;URL&amp;gt;&lt;/code>&lt;/p>
+&lt;h2 id="本地仓库和远程仓库绑定远程分支">本地仓库和远程仓库绑定(远程分支)
+&lt;/h2>&lt;p>git remote remove origin&lt;/p>
+&lt;p>git remote add origin &amp;ldquo;&lt;a class="link" href="https://github.com/LosLiSang/loslisang.github.io.git%22" target="_blank" rel="noopener"
+>https://github.com/LosLiSang/loslisang.github.io.git"&lt;/a>&lt;/p>
+&lt;h2 id="参考">参考
+&lt;/h2>&lt;p>&lt;a class="link" href="https://xugaoxiang.com/2021/03/17/git-clone-ssl-certificate-problem-unable-to-get-local-issuer-certificate/" target="_blank" rel="noopener"
+>迷途小书童的Note迷途小书童的Note (xugaoxiang.com)&lt;/a>&lt;/p></description></item></channel></rss>
