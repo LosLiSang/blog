@@ -23,6 +23,11 @@
                 "isDefault": true
             },
             "problemMatcher": []
+        },
+        {
+            "label": "create new post",
+            "type": "shell",
+            "command": "hugo new posts/${input:postname}.md",
         }
     ]
 }
