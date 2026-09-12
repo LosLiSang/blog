@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on LisangのBlog</title><link>https://loslisang.github.io/blog/tags/git/</link><description>Recent content in Git on LisangのBlog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 11 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://loslisang.github.io/blog/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>git分布式管理工具使用</title><link>https://loslisang.github.io/blog/p/git%E5%88%86%E5%B8%83%E5%BC%8F%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</link><pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate><guid>https://loslisang.github.io/blog/p/git%E5%88%86%E5%B8%83%E5%BC%8F%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</guid><description>&lt;h2 id="创建一个git仓库">创建一个git仓库
+&lt;/h2>&lt;p>&lt;code>git init&lt;/code>&lt;/p>
+&lt;p>&lt;code>git add (.)&lt;/code> 提交到暂存区&lt;/p>
+&lt;p>&lt;code>git commit -m &amp;lt;&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git log &amp;lt;--stat&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git diff &amp;lt;commit-id&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git reset --hard &amp;lt;commit-id&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git checkout &amp;lt;commit-id&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git branch&lt;/code>&lt;/p>
+&lt;p>&lt;code>git checkout -b develop&lt;/code>&lt;/p>
+&lt;p>&lt;code>$master git merge develop&lt;/code>&lt;/p>
+&lt;h2 id="git-config">git config
+&lt;/h2>&lt;h3 id="修改某些属性">修改某些属性
+&lt;/h3>&lt;p>&lt;code>git config --global &amp;lt;properity&amp;gt; &amp;lt;value&amp;gt;&lt;/code>&lt;/p>
+&lt;p>eg:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git config --global user.name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global user.email
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global http.sslverify &lt;span class="nb">false&lt;/span> 关闭验证ssl证书
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global http.sslBackend schannel
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="查看属性">查看属性
+&lt;/h3>&lt;p>&lt;code>git config --list --show-origin&lt;/code>&lt;/p>
+&lt;h2 id="git-clone">git clone
+&lt;/h2>&lt;h3 id="携带参数">携带参数
+&lt;/h3>&lt;p>eg:
+&lt;code>git -c http.sslVerify=false clone &amp;lt;URL&amp;gt;&lt;/code>&lt;/p>
+&lt;h2 id="本地仓库和远程仓库绑定远程分支">本地仓库和远程仓库绑定(远程分支)
+&lt;/h2>&lt;p>&lt;code>git remote remove origin&lt;/code>&lt;/p>
+&lt;p>&lt;code>git remote add origin &amp;quot;https://github.com/LosLiSang/loslisang.github.io.git&amp;quot;&lt;/code>&lt;/p>
+&lt;h2 id="参考">参考
+&lt;/h2>&lt;p>&lt;a class="link" href="https://xugaoxiang.com/2021/03/17/git-clone-ssl-certificate-problem-unable-to-get-local-issuer-certificate/" target="_blank" rel="noopener"
+>迷途小书童的Note迷途小书童的Note (xugaoxiang.com)&lt;/a>&lt;/p></description></item></channel></rss>

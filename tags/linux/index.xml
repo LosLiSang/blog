@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on LisangのBlog</title><link>https://loslisang.github.io/blog/tags/linux/</link><description>Recent content in Linux on LisangのBlog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 13 Jan 2024 00:09:24 +0800</lastBuildDate><atom:link href="https://loslisang.github.io/blog/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>clash在Linux中如何使用</title><link>https://loslisang.github.io/blog/p/clash%E5%9C%A8linux%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/</link><pubDate>Sat, 13 Jan 2024 00:09:24 +0800</pubDate><guid>https://loslisang.github.io/blog/p/clash%E5%9C%A8linux%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/</guid><description>&lt;h2 id="值得细讲的点">值得细讲的点
+&lt;/h2>&lt;h3 id="linux的clash因为在github上clash删库跑路了所以现存的clash压缩包">Linux的Clash，因为在github上，clash删库跑路了，所以现存的clash压缩包
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">wget https://github.com/Dreamacro/clash/releases/download/v1.14.0/clash-linux-amd64-v1.14.0.gz
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>建议自己也存一份&lt;/p>
+&lt;p>&lt;code>curl https://glados.rocks/tools/clash-linux.zip -o clash.zip&lt;/code>&lt;/p>
+&lt;h3 id="解压unzip">解压(unzip)
+&lt;/h3>&lt;h3 id="上传配置文件就是机场订阅链接下载下来的哪个yaml文件">上传配置文件(就是机场订阅链接下载下来的哪个yaml文件)
+&lt;/h3>&lt;h3 id="启动">启动
+&lt;/h3>&lt;p>&lt;code>./clash-linux-amd64-v1.10.0 -f glados.yaml -d .&lt;/code>&lt;/p>
+&lt;h3 id="设置环境变量">设置环境变量
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">https_proxy&lt;/span>&lt;span class="o">=&lt;/span>http://127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">http_proxy&lt;/span>&lt;span class="o">=&lt;/span>http://127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">all_proxy&lt;/span>&lt;span class="o">=&lt;/span>socks5://127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="参考">参考
+&lt;/h2>&lt;p>&lt;a class="link" href="https://blog.iswiftai.com/posts/clash-linux/" target="_blank" rel="noopener"
+>在 Linux 中使用 Clash | CodeSwift (iswiftai.com)&lt;/a>&lt;/p></description></item></channel></rss>

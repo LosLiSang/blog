@@ -1,0 +1,196 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="如何压测API Testing Performance Testing with Apache Bench | by Pankaj Gupta | Medium Top 9 Methods for API Testing in Java | Comprehensive Guide ab - Apache HTTP server benchmarking tool - Apache HTTP Server Version 2.4 性能测试工具 wrk 使用教程 - 犬小哈 - 博客园 wrk 是一款现代、轻量级且极高性能的 HTTP 基准测试工具（Benchmark Tool）。它最显著的特点是利用了异步事件驱动架构（如 Linux 的 epoll 或 macOS 的 kqueue），能用极少的线程在单机上产生巨大的并发压力。 简单来说，它是后端开发者用来压测接口 QPS (每秒查询率) 和 Latency (延迟) 的神器。 为什么用 wrk 而不是 Apache Bench (ab) 或 JMeter？ 性能更强：wrk 使用非阻塞 I/O，能比 ab 产生更高的并发，更能榨干服务器性能。 支持 Lua 脚本：这是 wrk 的杀手锏。你可以编写 Lua 脚本来构造复杂的请求（如生成动态 Token、随机参数、POST 复杂 JSON 等），而 ab 只能发静态请求。 轻量：没有 JMeter 那么重的 GUI，纯命令行，适合服务器端直接跑。 常用命令示例 最简单的压测命令："><title></title>
+<link rel=canonical href=https://loslisang.github.io/blog/p/><link rel=stylesheet href=/blog/scss/style.min.27c94b714fe808f03e6f08dbcfbb6ed6d2f4caebce5c8a7847487b0c6fe4398c.css><meta property='og:title' content><meta property='og:description' content="如何压测API Testing Performance Testing with Apache Bench | by Pankaj Gupta | Medium Top 9 Methods for API Testing in Java | Comprehensive Guide ab - Apache HTTP server benchmarking tool - Apache HTTP Server Version 2.4 性能测试工具 wrk 使用教程 - 犬小哈 - 博客园 wrk 是一款现代、轻量级且极高性能的 HTTP 基准测试工具（Benchmark Tool）。它最显著的特点是利用了异步事件驱动架构（如 Linux 的 epoll 或 macOS 的 kqueue），能用极少的线程在单机上产生巨大的并发压力。 简单来说，它是后端开发者用来压测接口 QPS (每秒查询率) 和 Latency (延迟) 的神器。 为什么用 wrk 而不是 Apache Bench (ab) 或 JMeter？ 性能更强：wrk 使用非阻塞 I/O，能比 ab 产生更高的并发，更能榨干服务器性能。 支持 Lua 脚本：这是 wrk 的杀手锏。你可以编写 Lua 脚本来构造复杂的请求（如生成动态 Token、随机参数、POST 复杂 JSON 等），而 ab 只能发静态请求。 轻量：没有 JMeter 那么重的 GUI，纯命令行，适合服务器端直接跑。 常用命令示例 最简单的压测命令："><meta property='og:url' content='https://loslisang.github.io/blog/p/'><meta property='og:site_name' content='LisangのBlog'><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta name=twitter:title content><meta name=twitter:description content="如何压测API Testing Performance Testing with Apache Bench | by Pankaj Gupta | Medium Top 9 Methods for API Testing in Java | Comprehensive Guide ab - Apache HTTP server benchmarking tool - Apache HTTP Server Version 2.4 性能测试工具 wrk 使用教程 - 犬小哈 - 博客园 wrk 是一款现代、轻量级且极高性能的 HTTP 基准测试工具（Benchmark Tool）。它最显著的特点是利用了异步事件驱动架构（如 Linux 的 epoll 或 macOS 的 kqueue），能用极少的线程在单机上产生巨大的并发压力。 简单来说，它是后端开发者用来压测接口 QPS (每秒查询率) 和 Latency (延迟) 的神器。 为什么用 wrk 而不是 Apache Bench (ab) 或 JMeter？ 性能更强：wrk 使用非阻塞 I/O，能比 ab 产生更高的并发，更能榨干服务器性能。 支持 Lua 脚本：这是 wrk 的杀手锏。你可以编写 Lua 脚本来构造复杂的请求（如生成动态 Token、随机参数、POST 复杂 JSON 等），而 ab 只能发静态请求。 轻量：没有 JMeter 那么重的 GUI，纯命令行，适合服务器端直接跑。 常用命令示例 最简单的压测命令："><link rel="shortcut icon" href=/favicon.png></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Toggle Menu">
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/blog/><img src=/blog/img/avatar_hu7ebd2607b6b769b3b6e560c2808f8ef3_114237_300x0_resize_box_3.png width=300 height=298 class=site-logo loading=lazy alt=Avatar>
+</a><span class=emoji>🍥</span></figure><div class=site-meta><h1 class=site-name><a href=/blog>LisangのBlog</a></h1><h2 class=site-description>喜欢动漫、音乐、电影、文学、跑步、思考还有🐱。对生活充满希望。认为经典和哲学值得被人传唱~</h2></div></header><ol class=menu-social><li><a href=https://space.bilibili.com/26972987 target=_blank title=Bilibili rel=me><svg fill="#707070" width="64" height="64" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#707070" stroke-width=".00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"><path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858.0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234.0 01-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373s.653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836.0 01.16-.213l2.853-2.747c.267-.249.573-.373.92-.373s.662.151.929.4.391.551.391.907c0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373.0.684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373.0.684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/></g></svg></a></li><li><a href=https://github.com/LosLisang target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/blog/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>Archives</span></a></li><li><a href=/blog/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>Search</span></a></li><li><a href=/blog/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>Links</span></a></li><li class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>Dark Mode</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">Table of contents</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#为什么用-wrk-而不是-apache-bench-ab-或-jmeter>为什么用 wrk 而不是 Apache Bench (ab) 或 JMeter？</a></li><li><a href=#常用命令示例>常用命令示例</a></li><li><a href=#配合-lua-脚本进阶>配合 Lua 脚本（进阶）</a><ol><li><a href=#1-基础随机随机请求不同的-url-路径>1. 基础随机：随机请求不同的 URL 路径</a></li><li><a href=#2-权重随机按比例访问不同接口>2. 权重随机：按比例访问不同接口</a></li><li><a href=#3-post-请求随机-body-内容>3. POST 请求：随机 Body 内容</a></li><li><a href=#4-高级技巧每个线程独立的用户身份-token>4. 高级技巧：每个线程独立的“用户身份” (Token)</a></li><li><a href=#总结>总结</a></li></ol></li><li><a href=#如何查看cpu核心数>如何查看CPU核心数</a></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><div class=article-title-wrapper><h2 class=article-title><a href=/blog/p/></a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>3 minute read</time></div></footer></div></header><section class=article-content><h1 id=如何压测api-testing>如何压测API Testing</h1><p><a class=link href=https://medium.com/@pankajgupta221b/performance-testing-with-apachebench-e2cef6882285 target=_blank rel=noopener>Performance Testing with Apache Bench | by Pankaj Gupta | Medium</a></p><p><a class=link href=https://www.code-intelligence.com/blog/methods-for-api-testing-in-java target=_blank rel=noopener>Top 9 Methods for API Testing in Java | Comprehensive Guide</a></p><p><a class=link href=https://httpd.apache.org/docs/2.4/programs/ab.html target=_blank rel=noopener>ab - Apache HTTP server benchmarking tool - Apache HTTP Server Version 2.4</a></p><p><a class=link href=https://www.cnblogs.com/quanxiaoha/p/10661650.html target=_blank rel=noopener>性能测试工具 wrk 使用教程 - 犬小哈 - 博客园</a></p><p><code>wrk</code> 是一款<strong>现代、轻量级且极高性能的 HTTP 基准测试工具</strong>（Benchmark Tool）。它最显著的特点是利用了异步事件驱动架构（如 Linux 的 epoll 或 macOS 的 kqueue），能用极少的线程在单机上产生巨大的并发压力。</p><p>简单来说，它是后端开发者用来<strong>压测接口 QPS (每秒查询率) 和 Latency (延迟)</strong> 的神器。</p><h2 id=为什么用-wrk-而不是-apache-bench-ab-或-jmeter>为什么用 wrk 而不是 Apache Bench (ab) 或 JMeter？</h2><ol><li><strong>性能更强</strong>：<code>wrk</code> 使用非阻塞 I/O，能比 <code>ab</code> 产生更高的并发，更能榨干服务器性能。</li><li><strong>支持 Lua 脚本</strong>：这是 <code>wrk</code> 的杀手锏。你可以编写 Lua 脚本来构造复杂的请求（如生成动态 Token、随机参数、POST 复杂 JSON 等），而 <code>ab</code> 只能发静态请求。</li><li><strong>轻量</strong>：没有 JMeter 那么重的 GUI，纯命令行，适合服务器端直接跑。</li></ol><h2 id=常用命令示例>常用命令示例</h2><p>最简单的压测命令：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>wrk -t12 -c400 -d30s http://localhost:8080/api/v1/user
+</span></span></code></pre></td></tr></table></div></div><ul><li><code>-t12</code>: 使用 12 个线程（一般设置为 CPU 核心数）。</li><li><code>-c400</code>: 保持 400 个 HTTP 连接（并发数）。</li><li><code>-d30s</code>: 持续压测 30 秒。</li><li><code>--latency</code>: (可选) 输出详细的延迟分布报告（P50, P90, P99）。</li></ul><h2 id=配合-lua-脚本进阶>配合 Lua 脚本（进阶）</h2><p>比如你要压测一个<strong>POST 接口</strong>，且需要<strong>JSON Body</strong>，可以写一个 <code>post.lua</code>：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-lua data-lang=lua><span class=line><span class=cl><span class=c1>-- post.lua</span>
+</span></span><span class=line><span class=cl><span class=n>wrk.method</span> <span class=o>=</span> <span class=s2>&#34;POST&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>wrk.body</span>   <span class=o>=</span> <span class=s1>&#39;{&#34;billCheckId&#34;: 123, &#34;type&#34;: &#34;NC&#34;}&#39;</span>
+</span></span><span class=line><span class=cl><span class=n>wrk.headers</span><span class=p>[</span><span class=s2>&#34;Content-Type&#34;</span><span class=p>]</span> <span class=o>=</span> <span class=s2>&#34;application/json&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><p><code>wrk</code> 的强大之处就在于它嵌入了 LuaJIT 解释器。这意味着你可以完全控制 HTTP 请求的生成逻辑，包括<strong>随机化参数、动态生成 Body、随机 Header、甚至根据响应调整请求</strong>。</p><p>以下是几个实用的 Lua 脚本模板，专门解决“随机分布请求”的问题。</p><h3 id=1-基础随机随机请求不同的-url-路径>1. 基础随机：随机请求不同的 URL 路径</h3><p>比如你想压测 <code>/user/1001</code> 到 <code>/user/9999</code> 这样随机的用户详情页，防止服务器缓存热点。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>-- 在压测开始前初始化随机种子
+</span></span><span class=line><span class=cl>-- 注意：每个线程都有独立的 Lua 虚拟机，所以每个线程都需要初始化一次
+</span></span><span class=line><span class=cl>math.randomseed(os.time())
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>request = function()
+</span></span><span class=line><span class=cl>   -- 生成 1 到 10000 之间的随机用户ID
+</span></span><span class=line><span class=cl>   local user_id = math.random(1, 10000)
+</span></span><span class=line><span class=cl>   -- 拼接路径
+</span></span><span class=line><span class=cl>   local path = &#34;/user/&#34; .. user_id
+</span></span><span class=line><span class=cl>   
+</span></span><span class=line><span class=cl>   -- 返回定制的请求
+</span></span><span class=line><span class=cl>   -- wrk.format(method, path, headers, body)
+</span></span><span class=line><span class=cl>   return wrk.format(&#34;GET&#34;, path)
+</span></span><span class=line><span class=cl>end
+</span></span></code></pre></td></tr></table></div></div><h3 id=2-权重随机按比例访问不同接口>2. 权重随机：按比例访问不同接口</h3><p>真实场景通常是混合的：80% 读请求，20% 写请求。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>math.randomseed(os.time())
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>local paths = {
+</span></span><span class=line><span class=cl>   &#34;/products/list&#34;,    -- 读列表
+</span></span><span class=line><span class=cl>   &#34;/products/detail&#34;,  -- 读详情
+</span></span><span class=line><span class=cl>   &#34;/cart/add&#34;          -- 写操作（加购）
+</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>request = function()
+</span></span><span class=line><span class=cl>   local r = math.random(1, 100)
+</span></span><span class=line><span class=cl>   
+</span></span><span class=line><span class=cl>   if r &lt;= 60 then
+</span></span><span class=line><span class=cl>      -- 60% 概率访问列表
+</span></span><span class=line><span class=cl>      return wrk.format(&#34;GET&#34;, paths[1])
+</span></span><span class=line><span class=cl>   elseif r &lt;= 90 then
+</span></span><span class=line><span class=cl>      -- 30% 概率访问详情 (60-90)
+</span></span><span class=line><span class=cl>      local pid = math.random(100, 500)
+</span></span><span class=line><span class=cl>      return wrk.format(&#34;GET&#34;, paths[2] .. &#34;/&#34; .. pid)
+</span></span><span class=line><span class=cl>   else
+</span></span><span class=line><span class=cl>      -- 10% 概率添加购物车 (90-100)
+</span></span><span class=line><span class=cl>      local body = &#39;{&#34;productId&#34;: &#39; .. math.random(100, 500) .. &#39;}&#39;
+</span></span><span class=line><span class=cl>      wrk.headers[&#34;Content-Type&#34;] = &#34;application/json&#34;
+</span></span><span class=line><span class=cl>      return wrk.format(&#34;POST&#34;, paths[3], nil, body)
+</span></span><span class=line><span class=cl>   end
+</span></span><span class=line><span class=cl>end
+</span></span></code></pre></td></tr></table></div></div><h3 id=3-post-请求随机-body-内容>3. POST 请求：随机 Body 内容</h3><p>压测“创建订单”或“短链接生成”接口时，每次 Body 必须不同，否则会被数据库唯一索引拦住。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>math.randomseed(os.time())
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-- 辅助函数：生成随机字符串
+</span></span><span class=line><span class=cl>function random_str(length)
+</span></span><span class=line><span class=cl>   local chars = &#34;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&#34;
+</span></span><span class=line><span class=cl>   local res = &#34;&#34;
+</span></span><span class=line><span class=cl>   for i = 1, length do
+</span></span><span class=line><span class=cl>      local rand = math.random(#chars)
+</span></span><span class=line><span class=cl>      res = res .. string.sub(chars, rand, rand)
+</span></span><span class=line><span class=cl>   end
+</span></span><span class=line><span class=cl>   return res
+</span></span><span class=line><span class=cl>end
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>request = function()
+</span></span><span class=line><span class=cl>   -- 动态生成 Body JSON
+</span></span><span class=line><span class=cl>   local random_url = &#34;http://example.com/&#34; .. random_str(8)
+</span></span><span class=line><span class=cl>   local body = &#39;{&#34;originalUrl&#34;: &#34;&#39; .. random_url .. &#39;&#34;}&#39;
+</span></span><span class=line><span class=cl>   
+</span></span><span class=line><span class=cl>   -- 设置 Header
+</span></span><span class=line><span class=cl>   wrk.headers[&#34;Content-Type&#34;] = &#34;application/json&#34;
+</span></span><span class=line><span class=cl>   
+</span></span><span class=line><span class=cl>   -- 发送 POST
+</span></span><span class=line><span class=cl>   return wrk.format(&#34;POST&#34;, &#34;/create&#34;, nil, body)
+</span></span><span class=line><span class=cl>end
+</span></span></code></pre></td></tr></table></div></div><h3 id=4-高级技巧每个线程独立的用户身份-token>4. 高级技巧：每个线程独立的“用户身份” (Token)</h3><p>如果你要压测需要登录的接口，可以给每个线程分配不同的 Token。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>-- 每个线程启动时调用一次 setup
+</span></span><span class=line><span class=cl>-- thread: 代表当前线程对象
+</span></span><span class=line><span class=cl>function setup(thread)
+</span></span><span class=line><span class=cl>   -- 给每个线程分配一个唯一的 ID (1, 2, 3...)
+</span></span><span class=line><span class=cl>   thread:set(&#34;id&#34;, _G.thread_id_counter)
+</span></span><span class=line><span class=cl>   _G.thread_id_counter = (_G.thread_id_counter or 0) + 1
+</span></span><span class=line><span class=cl>end
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-- 线程初始化时运行
+</span></span><span class=line><span class=cl>function init(args)
+</span></span><span class=line><span class=cl>   -- 根据线程 ID 生成伪造 Token
+</span></span><span class=line><span class=cl>   -- 比如线程1用 user1_token，线程2用 user2_token
+</span></span><span class=line><span class=cl>   local token = &#34;Bearer user_&#34; .. id .. &#34;_token_secret&#34;
+</span></span><span class=line><span class=cl>   
+</span></span><span class=line><span class=cl>   -- 设置全局默认 Header，该线程后续所有请求都会带上这个
+</span></span><span class=line><span class=cl>   wrk.headers[&#34;Authorization&#34;] = token
+</span></span><span class=line><span class=cl>end
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>request = function()
+</span></span><span class=line><span class=cl>   return wrk.format(&#34;GET&#34;, &#34;/profile&#34;)
+</span></span><span class=line><span class=cl>end
+</span></span></code></pre></td></tr></table></div></div><h3 id=总结>总结</h3><ol><li><strong>随机 URL</strong>：在 <code>request()</code> 函数里拼装 <code>path</code>。</li><li><strong>随机 Body</strong>：在 <code>request()</code> 里拼装 JSON 字符串。</li><li><strong>按比例混合</strong>：用 <code>math.random(1, 100)</code> 做 if-else 分流。</li><li><strong>运行方式</strong>：一定要带上 <code>--script</code> 参数。</li></ol><h2 id=如何查看cpu核心数>如何查看CPU核心数</h2><p><code>lscpu</code></p><p><img src=https://raw.githubusercontent.com/LosLiSang/picgo/main/20251209000431.png loading=lazy alt=20251209000431.png></p><p>可以看出一共有16个核心，每个核心可以当两个线程使用（Intel 的超线程技术）</p><blockquote><p>1. 为什么“1个核”能变“2个核”？</p><ul><li><strong>物理层面</strong>：你的 CPU 确实只有 <strong>16</strong> 个完整的物理核心（Physical Cores），也就是有 16 套独立的 ALU（运算单元）和缓存。</li><li><strong>逻辑层面</strong>：但是，物理核心内部的执行资源（如寄存器、指令队列）往往有富余。SMT 技术允许操作系统把 <strong>1 个物理核心</strong> 识别为 <strong>2 个逻辑核心</strong>。</li></ul></blockquote></section><footer class=article-footer><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><div class=disqus-container><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//hugo-theme-stack.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2026 LisangのBlog</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.29.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/blog/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
