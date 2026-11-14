@@ -1,9 +1,12 @@
 ---
 date: '2026-11-02T00:48:35+08:00'
-draft: true
+draft: false
 title: '软件开发SOLID'
-tag:    
+tags:
+  - SOLID
+  - 软件工程
 categories:
+  - 计算机
 image: 
 ---
 

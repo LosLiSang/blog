@@ -1,4 +1,13 @@
-# 如何压测API Testing
+---
+title: 如何压测API Testing
+date: 2026-09-12T08:41:08+08:00
+draft: false
+tags:
+  - API
+  - wrk
+categories:
+  - 计算机
+---
 
 [Performance Testing with Apache Bench | by Pankaj Gupta | Medium](https://medium.com/@pankajgupta221b/performance-testing-with-apachebench-e2cef6882285)
 
