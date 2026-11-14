@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wrk on LisangのBlog</title><link>https://loslisang.github.io/blog/tags/wrk/</link><description>Recent content in Wrk on LisangのBlog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 12 Sep 2026 08:41:08 +0800</lastBuildDate><atom:link href="https://loslisang.github.io/blog/tags/wrk/index.xml" rel="self" type="application/rss+xml"/><item><title>如何压测API Testing</title><link>https://loslisang.github.io/blog/p/%E5%A6%82%E4%BD%95%E5%8E%8B%E6%B5%8Bapi-testing/</link><pubDate>Sat, 12 Sep 2026 08:41:08 +0800</pubDate><guid>https://loslisang.github.io/blog/p/%E5%A6%82%E4%BD%95%E5%8E%8B%E6%B5%8Bapi-testing/</guid><description>&lt;p>&lt;a class="link" href="https://medium.com/@pankajgupta221b/performance-testing-with-apachebench-e2cef6882285" target="_blank" rel="noopener"
+>Performance Testing with Apache Bench | by Pankaj Gupta | Medium&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.code-intelligence.com/blog/methods-for-api-testing-in-java" target="_blank" rel="noopener"
+>Top 9 Methods for API Testing in Java | Comprehensive Guide&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://httpd.apache.org/docs/2.4/programs/ab.html" target="_blank" rel="noopener"
+>ab - Apache HTTP server benchmarking tool - Apache HTTP Server Version 2.4&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.cnblogs.com/quanxiaoha/p/10661650.html" target="_blank" rel="noopener"
+>性能测试工具 wrk 使用教程 - 犬小哈 - 博客园&lt;/a>&lt;/p>
+&lt;p>&lt;code>wrk&lt;/code> 是一款&lt;strong>现代、轻量级且极高性能的 HTTP 基准测试工具&lt;/strong>（Benchmark Tool）。它最显著的特点是利用了异步事件驱动架构（如 Linux 的 epoll 或 macOS 的 kqueue），能用极少的线程在单机上产生巨大的并发压力。&lt;/p>
+&lt;p>简单来说，它是后端开发者用来&lt;strong>压测接口 QPS (每秒查询率) 和 Latency (延迟)&lt;/strong> 的神器。&lt;/p>
+&lt;h2 id="为什么用-wrk-而不是-apache-bench-ab-或-jmeter">为什么用 wrk 而不是 Apache Bench (ab) 或 JMeter？
+&lt;/h2>&lt;ol>
+&lt;li>&lt;strong>性能更强&lt;/strong>：&lt;code>wrk&lt;/code> 使用非阻塞 I/O，能比 &lt;code>ab&lt;/code> 产生更高的并发，更能榨干服务器性能。&lt;/li>
+&lt;li>&lt;strong>支持 Lua 脚本&lt;/strong>：这是 &lt;code>wrk&lt;/code> 的杀手锏。你可以编写 Lua 脚本来构造复杂的请求（如生成动态 Token、随机参数、POST 复杂 JSON 等），而 &lt;code>ab&lt;/code> 只能发静态请求。&lt;/li>
+&lt;li>&lt;strong>轻量&lt;/strong>：没有 JMeter 那么重的 GUI，纯命令行，适合服务器端直接跑。&lt;/li>
+&lt;/ol>
+&lt;h2 id="常用命令示例">常用命令示例
+&lt;/h2>&lt;p>最简单的压测命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wrk -t12 -c400 -d30s http://localhost:8080/api/v1/user
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>&lt;code>-t12&lt;/code>: 使用 12 个线程（一般设置为 CPU 核心数）。&lt;/li>
+&lt;li>&lt;code>-c400&lt;/code>: 保持 400 个 HTTP 连接（并发数）。&lt;/li>
+&lt;li>&lt;code>-d30s&lt;/code>: 持续压测 30 秒。&lt;/li>
+&lt;li>&lt;code>--latency&lt;/code>: (可选) 输出详细的延迟分布报告（P50, P90, P99）。&lt;/li>
+&lt;/ul>
+&lt;h2 id="配合-lua-脚本进阶">配合 Lua 脚本（进阶）
+&lt;/h2>&lt;p>比如你要压测一个&lt;strong>POST 接口&lt;/strong>，且需要&lt;strong>JSON Body&lt;/strong>，可以写一个 &lt;code>post.lua&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-lua" data-lang="lua">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">-- post.lua&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wrk.method&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;POST&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wrk.body&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;{&amp;#34;billCheckId&amp;#34;: 123, &amp;#34;type&amp;#34;: &amp;#34;NC&amp;#34;}&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wrk.headers&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;Content-Type&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;application/json&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>wrk&lt;/code> 的强大之处就在于它嵌入了 LuaJIT 解释器。这意味着你可以完全控制 HTTP 请求的生成逻辑，包括&lt;strong>随机化参数、动态生成 Body、随机 Header、甚至根据响应调整请求&lt;/strong>。&lt;/p>
+&lt;p>以下是几个实用的 Lua 脚本模板，专门解决“随机分布请求”的问题。&lt;/p>
+&lt;h3 id="1-基础随机随机请求不同的-url-路径">1. 基础随机：随机请求不同的 URL 路径
+&lt;/h3>&lt;p>比如你想压测 &lt;code>/user/1001&lt;/code> 到 &lt;code>/user/9999&lt;/code> 这样随机的用户详情页，防止服务器缓存热点。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">-- 在压测开始前初始化随机种子
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-- 注意：每个线程都有独立的 Lua 虚拟机，所以每个线程都需要初始化一次
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">math.randomseed(os.time())
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">request = function()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 生成 1 到 10000 之间的随机用户ID
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local user_id = math.random(1, 10000)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 拼接路径
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local path = &amp;#34;/user/&amp;#34; .. user_id
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 返回定制的请求
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- wrk.format(method, path, headers, body)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;GET&amp;#34;, path)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="2-权重随机按比例访问不同接口">2. 权重随机：按比例访问不同接口
+&lt;/h3>&lt;p>真实场景通常是混合的：80% 读请求，20% 写请求。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">math.randomseed(os.time())
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">local paths = {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;/products/list&amp;#34;, -- 读列表
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;/products/detail&amp;#34;, -- 读详情
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;/cart/add&amp;#34; -- 写操作（加购）
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">request = function()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local r = math.random(1, 100)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if r &amp;lt;= 60 then
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 60% 概率访问列表
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;GET&amp;#34;, paths[1])
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> elseif r &amp;lt;= 90 then
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 30% 概率访问详情 (60-90)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local pid = math.random(100, 500)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;GET&amp;#34;, paths[2] .. &amp;#34;/&amp;#34; .. pid)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> else
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 10% 概率添加购物车 (90-100)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local body = &amp;#39;{&amp;#34;productId&amp;#34;: &amp;#39; .. math.random(100, 500) .. &amp;#39;}&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> wrk.headers[&amp;#34;Content-Type&amp;#34;] = &amp;#34;application/json&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;POST&amp;#34;, paths[3], nil, body)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="3-post-请求随机-body-内容">3. POST 请求：随机 Body 内容
+&lt;/h3>&lt;p>压测“创建订单”或“短链接生成”接口时，每次 Body 必须不同，否则会被数据库唯一索引拦住。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">math.randomseed(os.time())
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-- 辅助函数：生成随机字符串
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">function random_str(length)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local chars = &amp;#34;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local res = &amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> for i = 1, length do
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local rand = math.random(#chars)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> res = res .. string.sub(chars, rand, rand)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return res
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">request = function()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 动态生成 Body JSON
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local random_url = &amp;#34;http://example.com/&amp;#34; .. random_str(8)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local body = &amp;#39;{&amp;#34;originalUrl&amp;#34;: &amp;#34;&amp;#39; .. random_url .. &amp;#39;&amp;#34;}&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 设置 Header
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> wrk.headers[&amp;#34;Content-Type&amp;#34;] = &amp;#34;application/json&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 发送 POST
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;POST&amp;#34;, &amp;#34;/create&amp;#34;, nil, body)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="4-高级技巧每个线程独立的用户身份-token">4. 高级技巧：每个线程独立的“用户身份” (Token)
+&lt;/h3>&lt;p>如果你要压测需要登录的接口，可以给每个线程分配不同的 Token。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">-- 每个线程启动时调用一次 setup
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-- thread: 代表当前线程对象
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">function setup(thread)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 给每个线程分配一个唯一的 ID (1, 2, 3...)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> thread:set(&amp;#34;id&amp;#34;, _G.thread_id_counter)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> _G.thread_id_counter = (_G.thread_id_counter or 0) + 1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-- 线程初始化时运行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">function init(args)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 根据线程 ID 生成伪造 Token
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 比如线程1用 user1_token，线程2用 user2_token
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local token = &amp;#34;Bearer user_&amp;#34; .. id .. &amp;#34;_token_secret&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 设置全局默认 Header，该线程后续所有请求都会带上这个
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> wrk.headers[&amp;#34;Authorization&amp;#34;] = token
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">request = function()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;GET&amp;#34;, &amp;#34;/profile&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="总结">总结
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>随机 URL&lt;/strong>：在 &lt;code>request()&lt;/code> 函数里拼装 &lt;code>path&lt;/code>。&lt;/li>
+&lt;li>&lt;strong>随机 Body&lt;/strong>：在 &lt;code>request()&lt;/code> 里拼装 JSON 字符串。&lt;/li>
+&lt;li>&lt;strong>按比例混合&lt;/strong>：用 &lt;code>math.random(1, 100)&lt;/code> 做 if-else 分流。&lt;/li>
+&lt;li>&lt;strong>运行方式&lt;/strong>：一定要带上 &lt;code>--script&lt;/code> 参数。&lt;/li>
+&lt;/ol>
+&lt;h2 id="如何查看cpu核心数">如何查看CPU核心数
+&lt;/h2>&lt;p>&lt;code>lscpu&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/LosLiSang/picgo/main/20251209000431.png"
+loading="lazy"
+alt="20251209000431.png"
+>&lt;/p>
+&lt;p>可以看出一共有16个核心，每个核心可以当两个线程使用（Intel 的超线程技术）&lt;/p>
+&lt;blockquote>
+&lt;p>1. 为什么“1个核”能变“2个核”？&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>物理层面&lt;/strong>：你的 CPU 确实只有 &lt;strong>16&lt;/strong> 个完整的物理核心（Physical Cores），也就是有 16 套独立的 ALU（运算单元）和缓存。&lt;/li>
+&lt;li>&lt;strong>逻辑层面&lt;/strong>：但是，物理核心内部的执行资源（如寄存器、指令队列）往往有富余。SMT 技术允许操作系统把 &lt;strong>1 个物理核心&lt;/strong> 识别为 &lt;strong>2 个逻辑核心&lt;/strong>。&lt;/li>
+&lt;/ul>
+&lt;/blockquote></description></item></channel></rss>

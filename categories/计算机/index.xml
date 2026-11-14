@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>计算机 on LisangのBlog</title><link>https://loslisang.github.io/blog/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link><description>Recent content in 计算机 on LisangのBlog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 03 Nov 2026 23:59:00 +0800</lastBuildDate><atom:link href="https://loslisang.github.io/blog/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>5美元开通 Google AI One Pro</title><link>https://loslisang.github.io/blog/p/google-ai-one-pro-5usd/</link><pubDate>Tue, 03 Nov 2026 23:59:00 +0800</pubDate><guid>https://loslisang.github.io/blog/p/google-ai-one-pro-5usd/</guid><description>&lt;h2 id="主要原理">主要原理
+&lt;/h2>&lt;p>通过谷歌的学生认证, 实现部分地区的低价Pro订阅&lt;/p>
+&lt;h2 id="主要步骤">主要步骤
+&lt;/h2>&lt;h3 id="前置内容">前置内容
+&lt;/h3>&lt;ol>
+&lt;li>日本地区节点&lt;/li>
+&lt;li>Google账号&lt;/li>
+&lt;li>非中国大陆发行的Visa卡或万事达卡&lt;/li>
+&lt;/ol>
+&lt;h3 id="1-准备一个日本地区的代理">1. 准备一个日本地区的代理
+&lt;/h3>&lt;p>这个很重要, 在我开通学生优惠的时候发现进去 &lt;a class="link" href="https://one.google.com/ai-student" target="_blank" rel="noopener"
+>https://one.google.com/ai-student&lt;/a>, 如果计价单位不是日元是不行的.&lt;/p>
+&lt;p>如何做呢, 就是不论你是手机端还是网页端, 都使用日本代理, 最好是开全局, 这样比较稳健.&lt;/p>
+&lt;p>这边看的主要还是你的支付账单的方式是否是日本地区, 当然别的低价区「例如土耳其区」也是可以的, 但是日本地区的支付不会限制支付方式, 即使你用U卡支付也是可以的, 如果是土区的话就可能难以添加支付方式.&lt;/p>
+&lt;h3 id="2-验证学生身份-通常使用sheerid认证">2. 验证学生身份, 通常使用sheerid认证
+&lt;/h3>&lt;p>通常使用sheerid认证, 这个认证过程需要你提供一些个人信息, 例如你的姓名, 学号等, 这些信息会被用来验证你的身份. 我自己在认证sheerID的时候感觉有点难, 所以就直接在tg上找了一个bot认证了. 大概5元左右.&lt;/p>
+&lt;p>如果你已经有Jio订阅的AI One Pro, 打开这个链接 &lt;a class="link" href="https://one.google.com/ai-student" target="_blank" rel="noopener"
+>https://one.google.com/ai-student&lt;/a>, 你会看到一个已经认证好的界面, 需要取消掉原本的Jio吗你可以进入 &lt;a class="link" href="https://myaccount.google.com/u/1/deleteservices" target="_blank" rel="noopener"
+>https://myaccount.google.com/u/1/deleteservices&lt;/a> 取消掉.&lt;/p>
+&lt;h3 id="3-准备支付方式">3. 准备支付方式
+&lt;/h3>&lt;p>这边通常是在Google Play上添加会比较方便, 谷歌 Play 商店 → 头像 → 设置 → 常规 → 账号和设备偏好设置 → 国家/地区和个人资料。然后创建你的支付方式, 选择好支付卡和支付地区.&lt;/p>
+&lt;p>如果是网页端的话, 就打开&lt;a class="link" href="https://payments.google.com/gp/w/home/settings" target="_blank" rel="noopener"
+>https://payments.google.com/gp/w/home/settings&lt;/a>添加日本地区的支付方式.&lt;/p>
+&lt;p>我自己使用的是虚拟U卡是可以的.&lt;/p>
+&lt;h3 id="4-订阅ai-one-pro">4. 订阅AI One Pro
+&lt;/h3>&lt;p>这边日本地区就是720日元就可以拿下一个月的AI One Pro, 折合下来大概4.6美刀, 30人民币左右&lt;/p>
+&lt;h3 id="5-使用agy">5. 使用AGY
+&lt;/h3>&lt;p>受限与之前的Jio羊毛风波, 现在Anti-Gravity 「AGY」 的风控变得更加严格了, 尽可能不要将AGY账号拿去反代, 否则就会像我一样喜提4个suspend, 然后去写保证书.&lt;/p>
+&lt;p>如果你的账号不能使用AGY, 提示:&lt;/p>
+&lt;p>&lt;code>error: Eligibility check failed: Your current account is not eligible for Antigravity, because it is not currently available in your location.&lt;/code>&lt;/p>
+&lt;p>那就是你的个人账号地区设置不正确, 你可以在下面的链接检查或者切换你的地区:&lt;/p>
+&lt;p>&lt;a class="link" href="https://policies.google.com/country-association-form" target="_blank" rel="noopener"
+>https://policies.google.com/country-association-form&lt;/a>&lt;/p>
+&lt;h2 id="附录">附录
+&lt;/h2>&lt;h3 id="参考教程">参考教程
+&lt;/h3>&lt;p>&lt;a class="link" href="https://x.com/mjjwiki/status/2115449169737548181" target="_blank" rel="noopener"
+>手把手教你合规低价订阅Gemini，可以在反重力Antigravity使用Gemini 4 Argon和Claude Opus 5.5 。&lt;/a>&lt;/p>
+&lt;h3 id="相关链接">相关链接
+&lt;/h3>&lt;p>&lt;a class="link" href="https://policies.google.com/country-association-form" target="_blank" rel="noopener"
+>谷歌地区检查&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLScOJWibQ_-hYuVv63kJTgEqlgAaOwRLGFTbXm-QY1gz8U0CGA/viewform" target="_blank" rel="noopener"
+>反重力保证书&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://myaccount.google.com/u/1/deleteservices" target="_blank" rel="noopener"
+>删除服务&lt;/a>&lt;/p></description></item><item><title>软件开发SOLID</title><link>https://loslisang.github.io/blog/p/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91solid/</link><pubDate>Mon, 02 Nov 2026 00:48:35 +0800</pubDate><guid>https://loslisang.github.io/blog/p/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91solid/</guid><description>&lt;blockquote>
+&lt;p>在AI日渐强大的2026年，我发现有必要再认真学习一下SOLID这五条原则，因为人基本上不怎么写代码了，所以学会review代码就更重要了，在软件工程中SOLID 这一套经过时间沉淀的规则就有其存在的必要了。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="认识一下solid">认识一下SOLID
+&lt;/h2>&lt;h3 id="单一职责原则">单一职责原则
+&lt;/h3>&lt;p>SRP 单一职责原则 (Single Responsibility Principle) 指的是一个类或者模块应该只负责一个功能，而不是多个功能。&lt;/p>
+&lt;h3 id="开放封闭原则">开放封闭原则
+&lt;/h3>&lt;p>OCP 开放封闭原则 (Open Closed Principle) 指的是一个软件实体（类、模块、函数等）应该对扩展开放，对修改关闭。&lt;/p>
+&lt;h3 id="里氏替换原则">里氏替换原则
+&lt;/h3>&lt;p>LSP 里氏替换原则 (Liskov Substitution Principle) 指的是子类应该能够替换父类，而不影响程序的正确性。&lt;/p>
+&lt;blockquote>
+&lt;p>这个很好理解，基本上只要是在面向对象语言中，子类都应该能够替换父类。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="依赖倒置原则">依赖倒置原则
+&lt;/h3>&lt;p>DIP 依赖倒置原则 (Dependency Inversion Principle) 指的是高层模块不应该依赖于低层模块，两者都应该依赖于抽象。&lt;/p>
+&lt;blockquote>
+&lt;p>例如，查询用户接口本身需要依赖于底层的数据库查询接口，而不是直接依赖于数据库&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>此外依赖注入不是依赖倒置, 依赖倒置是一种设计原则, 而依赖注入是一种实现方式。
+还有IoC, 控制反转, 和依赖倒置也不是一个东西, IoC 体现的是谁负责依赖的注入&lt;/p>
+&lt;/blockquote>
+&lt;p>他们的关系如下:&lt;/p>
+&lt;blockquote>
+&lt;p>DIP 说的是源码依赖指向哪里（静态结构），IoC 说的是谁调用谁、谁掌握控制权（运行时流程）。二者正交，DI 是把它们连起来的施工手段。
+DIP 只有两条（Martin, 1996）：高层不依赖低层，两者都依赖抽象；抽象不依赖细节，细节依赖抽象。
+IoC 是更泛的词：回调、事件循环、模板方法、框架生命周期、插件、DI 全算。共同点是「别打给我们，我们会打给你」——main 不再驱动一切，框架反过来调你。&lt;/p>
+&lt;/blockquote>
+&lt;p>为了区分上述概念&lt;/p>
+&lt;ol>
+&lt;li>违反 DIP：字段类型就是具体类&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| OrderService | high-level policy
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| - repo : MySqlUserRepo|
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| + placeOrder() : void |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | uses
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> v
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| MySqlUserRepo | low-level detail
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| + find(id) : User |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| + save(u : User): void|
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> v
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> MySQL driver
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>符合 DIP：接口归高层，实现反向依赖&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> +------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | OrderService | domain (high-level)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | - repo : UserRepo |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | + placeOrder() : void |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | uses
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> v
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | &amp;lt;&amp;lt;interface&amp;gt;&amp;gt; |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | UserRepo | domain (interface owned by high level)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | + find(id) : User |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | + save(u : User): void|
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ^
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> :
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> : implements
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> :
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | MySqlUserRepo | infra (low-level)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +------------------------+
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>倒置的是依赖方向，不是调用方向&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> 运行时调用流 编译期依赖流
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ------------ ------------
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> OrderService OrderService
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | calls | uses
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> v v
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> MySqlUserRepo UserRepo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ^
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | implements
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> MySqlUserRepo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>同一次协作里两条箭头方向相反，这才是 inversion 的含义。&lt;/p>
+&lt;ol start="4">
+&lt;li>加容器：只填空隙，不改结构&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> +---------------------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | Container / main() | composition root
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | bind(UserRepo =&amp;gt; MySqlUserRepo) |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +---------------------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> inject | | new
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> v v
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +----------------+ +------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | OrderService | | MySqlUserRepo |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +----------------+ +------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | uses | implements
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +----------+----------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> v
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +-------------------------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | &amp;lt;&amp;lt;interface&amp;gt;&amp;gt; |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> | UserRepo |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> +-------------------------+
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="接口隔离原则">接口隔离原则
+&lt;/h3>&lt;p>ISP 接口隔离原则 (Interface Segregation Principle) 指的是客户端不应该依赖于它不需要的接口。&lt;/p>
+&lt;blockquote>
+&lt;p>处理这种文件的最简单方法就是拆分大接口成为一个个的小接口&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="一些常见的误区">一些常见的误区
+&lt;/h2>&lt;h2 id="一些常见的实践">一些常见的实践
+&lt;/h2></description></item><item><title>如何压测API Testing</title><link>https://loslisang.github.io/blog/p/%E5%A6%82%E4%BD%95%E5%8E%8B%E6%B5%8Bapi-testing/</link><pubDate>Sat, 12 Sep 2026 08:41:08 +0800</pubDate><guid>https://loslisang.github.io/blog/p/%E5%A6%82%E4%BD%95%E5%8E%8B%E6%B5%8Bapi-testing/</guid><description>&lt;p>&lt;a class="link" href="https://medium.com/@pankajgupta221b/performance-testing-with-apachebench-e2cef6882285" target="_blank" rel="noopener"
+>Performance Testing with Apache Bench | by Pankaj Gupta | Medium&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.code-intelligence.com/blog/methods-for-api-testing-in-java" target="_blank" rel="noopener"
+>Top 9 Methods for API Testing in Java | Comprehensive Guide&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://httpd.apache.org/docs/2.4/programs/ab.html" target="_blank" rel="noopener"
+>ab - Apache HTTP server benchmarking tool - Apache HTTP Server Version 2.4&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.cnblogs.com/quanxiaoha/p/10661650.html" target="_blank" rel="noopener"
+>性能测试工具 wrk 使用教程 - 犬小哈 - 博客园&lt;/a>&lt;/p>
+&lt;p>&lt;code>wrk&lt;/code> 是一款&lt;strong>现代、轻量级且极高性能的 HTTP 基准测试工具&lt;/strong>（Benchmark Tool）。它最显著的特点是利用了异步事件驱动架构（如 Linux 的 epoll 或 macOS 的 kqueue），能用极少的线程在单机上产生巨大的并发压力。&lt;/p>
+&lt;p>简单来说，它是后端开发者用来&lt;strong>压测接口 QPS (每秒查询率) 和 Latency (延迟)&lt;/strong> 的神器。&lt;/p>
+&lt;h2 id="为什么用-wrk-而不是-apache-bench-ab-或-jmeter">为什么用 wrk 而不是 Apache Bench (ab) 或 JMeter？
+&lt;/h2>&lt;ol>
+&lt;li>&lt;strong>性能更强&lt;/strong>：&lt;code>wrk&lt;/code> 使用非阻塞 I/O，能比 &lt;code>ab&lt;/code> 产生更高的并发，更能榨干服务器性能。&lt;/li>
+&lt;li>&lt;strong>支持 Lua 脚本&lt;/strong>：这是 &lt;code>wrk&lt;/code> 的杀手锏。你可以编写 Lua 脚本来构造复杂的请求（如生成动态 Token、随机参数、POST 复杂 JSON 等），而 &lt;code>ab&lt;/code> 只能发静态请求。&lt;/li>
+&lt;li>&lt;strong>轻量&lt;/strong>：没有 JMeter 那么重的 GUI，纯命令行，适合服务器端直接跑。&lt;/li>
+&lt;/ol>
+&lt;h2 id="常用命令示例">常用命令示例
+&lt;/h2>&lt;p>最简单的压测命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wrk -t12 -c400 -d30s http://localhost:8080/api/v1/user
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>&lt;code>-t12&lt;/code>: 使用 12 个线程（一般设置为 CPU 核心数）。&lt;/li>
+&lt;li>&lt;code>-c400&lt;/code>: 保持 400 个 HTTP 连接（并发数）。&lt;/li>
+&lt;li>&lt;code>-d30s&lt;/code>: 持续压测 30 秒。&lt;/li>
+&lt;li>&lt;code>--latency&lt;/code>: (可选) 输出详细的延迟分布报告（P50, P90, P99）。&lt;/li>
+&lt;/ul>
+&lt;h2 id="配合-lua-脚本进阶">配合 Lua 脚本（进阶）
+&lt;/h2>&lt;p>比如你要压测一个&lt;strong>POST 接口&lt;/strong>，且需要&lt;strong>JSON Body&lt;/strong>，可以写一个 &lt;code>post.lua&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-lua" data-lang="lua">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">-- post.lua&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wrk.method&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;POST&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wrk.body&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;{&amp;#34;billCheckId&amp;#34;: 123, &amp;#34;type&amp;#34;: &amp;#34;NC&amp;#34;}&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wrk.headers&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;Content-Type&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;application/json&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>wrk&lt;/code> 的强大之处就在于它嵌入了 LuaJIT 解释器。这意味着你可以完全控制 HTTP 请求的生成逻辑，包括&lt;strong>随机化参数、动态生成 Body、随机 Header、甚至根据响应调整请求&lt;/strong>。&lt;/p>
+&lt;p>以下是几个实用的 Lua 脚本模板，专门解决“随机分布请求”的问题。&lt;/p>
+&lt;h3 id="1-基础随机随机请求不同的-url-路径">1. 基础随机：随机请求不同的 URL 路径
+&lt;/h3>&lt;p>比如你想压测 &lt;code>/user/1001&lt;/code> 到 &lt;code>/user/9999&lt;/code> 这样随机的用户详情页，防止服务器缓存热点。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">-- 在压测开始前初始化随机种子
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-- 注意：每个线程都有独立的 Lua 虚拟机，所以每个线程都需要初始化一次
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">math.randomseed(os.time())
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">request = function()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 生成 1 到 10000 之间的随机用户ID
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local user_id = math.random(1, 10000)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 拼接路径
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local path = &amp;#34;/user/&amp;#34; .. user_id
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 返回定制的请求
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- wrk.format(method, path, headers, body)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;GET&amp;#34;, path)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="2-权重随机按比例访问不同接口">2. 权重随机：按比例访问不同接口
+&lt;/h3>&lt;p>真实场景通常是混合的：80% 读请求，20% 写请求。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">math.randomseed(os.time())
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">local paths = {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;/products/list&amp;#34;, -- 读列表
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;/products/detail&amp;#34;, -- 读详情
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;/cart/add&amp;#34; -- 写操作（加购）
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">request = function()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local r = math.random(1, 100)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if r &amp;lt;= 60 then
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 60% 概率访问列表
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;GET&amp;#34;, paths[1])
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> elseif r &amp;lt;= 90 then
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 30% 概率访问详情 (60-90)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local pid = math.random(100, 500)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;GET&amp;#34;, paths[2] .. &amp;#34;/&amp;#34; .. pid)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> else
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 10% 概率添加购物车 (90-100)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local body = &amp;#39;{&amp;#34;productId&amp;#34;: &amp;#39; .. math.random(100, 500) .. &amp;#39;}&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> wrk.headers[&amp;#34;Content-Type&amp;#34;] = &amp;#34;application/json&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;POST&amp;#34;, paths[3], nil, body)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="3-post-请求随机-body-内容">3. POST 请求：随机 Body 内容
+&lt;/h3>&lt;p>压测“创建订单”或“短链接生成”接口时，每次 Body 必须不同，否则会被数据库唯一索引拦住。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">math.randomseed(os.time())
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-- 辅助函数：生成随机字符串
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">function random_str(length)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local chars = &amp;#34;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local res = &amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> for i = 1, length do
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local rand = math.random(#chars)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> res = res .. string.sub(chars, rand, rand)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return res
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">request = function()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 动态生成 Body JSON
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local random_url = &amp;#34;http://example.com/&amp;#34; .. random_str(8)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local body = &amp;#39;{&amp;#34;originalUrl&amp;#34;: &amp;#34;&amp;#39; .. random_url .. &amp;#39;&amp;#34;}&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 设置 Header
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> wrk.headers[&amp;#34;Content-Type&amp;#34;] = &amp;#34;application/json&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 发送 POST
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;POST&amp;#34;, &amp;#34;/create&amp;#34;, nil, body)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="4-高级技巧每个线程独立的用户身份-token">4. 高级技巧：每个线程独立的“用户身份” (Token)
+&lt;/h3>&lt;p>如果你要压测需要登录的接口，可以给每个线程分配不同的 Token。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">-- 每个线程启动时调用一次 setup
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-- thread: 代表当前线程对象
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">function setup(thread)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 给每个线程分配一个唯一的 ID (1, 2, 3...)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> thread:set(&amp;#34;id&amp;#34;, _G.thread_id_counter)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> _G.thread_id_counter = (_G.thread_id_counter or 0) + 1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">-- 线程初始化时运行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">function init(args)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 根据线程 ID 生成伪造 Token
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 比如线程1用 user1_token，线程2用 user2_token
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> local token = &amp;#34;Bearer user_&amp;#34; .. id .. &amp;#34;_token_secret&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -- 设置全局默认 Header，该线程后续所有请求都会带上这个
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> wrk.headers[&amp;#34;Authorization&amp;#34;] = token
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">request = function()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return wrk.format(&amp;#34;GET&amp;#34;, &amp;#34;/profile&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="总结">总结
+&lt;/h3>&lt;ol>
+&lt;li>&lt;strong>随机 URL&lt;/strong>：在 &lt;code>request()&lt;/code> 函数里拼装 &lt;code>path&lt;/code>。&lt;/li>
+&lt;li>&lt;strong>随机 Body&lt;/strong>：在 &lt;code>request()&lt;/code> 里拼装 JSON 字符串。&lt;/li>
+&lt;li>&lt;strong>按比例混合&lt;/strong>：用 &lt;code>math.random(1, 100)&lt;/code> 做 if-else 分流。&lt;/li>
+&lt;li>&lt;strong>运行方式&lt;/strong>：一定要带上 &lt;code>--script&lt;/code> 参数。&lt;/li>
+&lt;/ol>
+&lt;h2 id="如何查看cpu核心数">如何查看CPU核心数
+&lt;/h2>&lt;p>&lt;code>lscpu&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/LosLiSang/picgo/main/20251209000431.png"
+loading="lazy"
+alt="20251209000431.png"
+>&lt;/p>
+&lt;p>可以看出一共有16个核心，每个核心可以当两个线程使用（Intel 的超线程技术）&lt;/p>
+&lt;blockquote>
+&lt;p>1. 为什么“1个核”能变“2个核”？&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>物理层面&lt;/strong>：你的 CPU 确实只有 &lt;strong>16&lt;/strong> 个完整的物理核心（Physical Cores），也就是有 16 套独立的 ALU（运算单元）和缓存。&lt;/li>
+&lt;li>&lt;strong>逻辑层面&lt;/strong>：但是，物理核心内部的执行资源（如寄存器、指令队列）往往有富余。SMT 技术允许操作系统把 &lt;strong>1 个物理核心&lt;/strong> 识别为 &lt;strong>2 个逻辑核心&lt;/strong>。&lt;/li>
+&lt;/ul>
+&lt;/blockquote></description></item><item><title>LeetCode 82. 删除排序链表中的重复元素 II</title><link>https://loslisang.github.io/blog/p/leetcode-82.-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0-ii/</link><pubDate>Mon, 15 Jan 2024 19:40:04 +0800</pubDate><guid>https://loslisang.github.io/blog/p/leetcode-82.-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0-ii/</guid><description>&lt;p>&lt;a class="link" href="https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/" target="_blank" rel="noopener"
+>82. 删除排序链表中的重复元素 II&lt;/a>&lt;/p>
+&lt;h2 id="题目描述">题目描述
+&lt;/h2>&lt;p>给定一个已排序的链表的头 &lt;code>head&lt;/code> ， &lt;em>删除原始链表中所有重复数字的节点，只留下不同的数字&lt;/em> 。返回 &lt;em>已排序的链表&lt;/em> 。&lt;/p>
+&lt;h3 id="示例">示例
+&lt;/h3>&lt;p>&lt;img src="https://raw.githubusercontent.com/LosLiSang/picgo/main/Pasted%20image%2020240115145926.png"
+loading="lazy"
+alt="Pasted image 20240115145926"
+>&lt;/p>
+&lt;h2 id="题解">题解
+&lt;/h2>&lt;p>首先，链表是排序过的，所以相同的节点肯定是连续的，只需要遍历一遍就能把所有相同的节点删除&lt;/p>
+&lt;p>记pre为去重链表的遍历节点itr的前一个节点。（我们从前往后遍历，前面的链表就是去除过后的链表）&lt;/p>
+&lt;ol>
+&lt;li>如果itr.val == itr.next.val，那我们就记flag为当前遍历节点的值，令&lt;code>flag=itr.val&lt;/code>，不断向后遍历令itr = itr.next，直到，itr.next.val != flag 或者 itr.next == null。然后让pre.next = itr.next&lt;/li>
+&lt;li>如果itr.val != itr.next.val，那么就说明itr不是冗余节点，则不必删除，让pre = itr即可&lt;/li>
+&lt;/ol>
+&lt;h3 id="代码">代码
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">deleteDuplicates&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">flag&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">101&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">new&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">dummyNode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyNode&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">val&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">val&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">flag&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">val&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">val&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">flag&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="k">else&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyNode&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>时间复杂度 O(n), 空间复杂度O(1)&lt;/p>
+&lt;h2 id="总结">总结
+&lt;/h2>&lt;p>链表的题通常需要注意两点：&lt;/p>
+&lt;ol>
+&lt;li>舍得用变量，千万别想着节省变量，否则容易被逻辑绕晕&lt;/li>
+&lt;li>head 有可能需要改动时，先增加一个 假head，返回的时候直接取 假head.next，这样就不需要为修改 head 增加一大堆逻辑了。&lt;/li>
+&lt;/ol></description></item><item><title>LeetCode 143. 重排链表</title><link>https://loslisang.github.io/blog/p/leetcode-143.-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</link><pubDate>Mon, 15 Jan 2024 19:32:06 +0800</pubDate><guid>https://loslisang.github.io/blog/p/leetcode-143.-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8/</guid><description>&lt;h2 id="题目描述">题目描述
+&lt;/h2>&lt;p>给定一个单链表 &lt;code>L&lt;/code> 的头节点 &lt;code>head&lt;/code> ，单链表 &lt;code>L&lt;/code> 表示为：&lt;/p>
+&lt;blockquote>
+&lt;p>L0 → L1 → … → Ln - 1 → Ln&lt;/p>
+&lt;/blockquote>
+&lt;p>请将其重新排列后变为：&lt;/p>
+&lt;blockquote>
+&lt;p>L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …&lt;/p>
+&lt;/blockquote>
+&lt;p>不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
+&lt;img src="https://raw.githubusercontent.com/LosLiSang/picgo/main/Pasted%20image%2020240115180529%201.png"
+loading="lazy"
+alt="Pasted image 20240115180529 1"
+>&lt;/p>
+&lt;h2 id="题解">题解
+&lt;/h2>&lt;h3 id="解法一暴力解">解法一：暴力解
+&lt;/h3>&lt;p>第i次循环都把最后一个节点移动到第&lt;code>2*i-1&lt;/code>个节点后面，当然不是用for循环，只是代码运行的时候链表内部是这样的过程。&lt;/p>
+&lt;p>记itr为从前往后遍历的节点，只要itr.next不为null，就一直做以下循环&lt;/p>
+&lt;ol>
+&lt;li>找到最后一个节点的前一个节点记为pre，最后一个节点记为last = pre.next&lt;/li>
+&lt;li>把最后一个节点删除，插入到第itr的后面&lt;/li>
+&lt;li>令itr前移动两个单位itr = itr.next.next&lt;/li>
+&lt;/ol>
+&lt;p>步骤2的Code&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="n">pre&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="代码">代码
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">class&lt;/span> &lt;span class="nc">Solution&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">lastPre&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">reorderList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">lastPre&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">pre&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">last&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>时间复杂度 $O(N^2)$&lt;/p>
+&lt;h3 id="解法二">解法二
+&lt;/h3>&lt;ol>
+&lt;li>找中点，拆分链表&lt;/li>
+&lt;li>倒置后半段链表&lt;/li>
+&lt;li>合并两段链表&lt;/li>
+&lt;/ol>
+&lt;h4 id="找中点快慢指针法">找中点（快慢指针法）
+&lt;/h4>&lt;h5 id="eg1">eg1
+&lt;/h5>&lt;p>1-&amp;gt;2-&amp;gt;3-&amp;gt;4&lt;/p>
+&lt;p>fast:1 slow:1&lt;/p>
+&lt;p>fast:3 slow:2&lt;/p>
+&lt;p>fast.next.next为null，终止循环&lt;/p>
+&lt;p>那么中点就记为mid = slow.next 为 3&lt;/p>
+&lt;h5 id="eg2">eg2
+&lt;/h5>&lt;p>1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5&lt;/p>
+&lt;p>fast:1 slow:1&lt;/p>
+&lt;p>fast:3 slow:2&lt;/p>
+&lt;p>fast:5 slow:3&lt;/p>
+&lt;p>fast.next为null，终止循环&lt;/p>
+&lt;p>那么中点就记为mid = slow.next 为 4&lt;/p>
+&lt;p>拆分链表，slow.next = null;&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">getMid&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">slow&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">fast&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">fast&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">fast&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">slow&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">slow&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">fast&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">fast&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">slow&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="倒置链表">倒置链表
+&lt;/h4>&lt;p>记后半段链表为back，前半段链表为front&lt;/p>
+&lt;p>倒置链表使用前插法&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">reverse&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyHead&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">new&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="p">();&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">temp&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyHead&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">dummyHead&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">itr&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">temp&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">dummyHead&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="合并链表">合并链表
+&lt;/h4>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">merge&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l2&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">l2&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">null&lt;/span>&lt;span class="p">){&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">ListNode&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1Next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l2&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">l2&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l2&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1Next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">l1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="na">next&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">return&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="总结">总结
+&lt;/h2>&lt;ol>
+&lt;li>链表的赋值，其实和变量交换很类似，都是需要备份的。&lt;/li>
+&lt;li>封装好功能的函数，远远比一整段写出来的代码要更好理解！！&lt;/li>
+&lt;li>不用害怕定义变量，但是前提是你要知道这个变量是用来做什么的&lt;/li>
+&lt;/ol></description></item><item><title>clash在Linux中如何使用</title><link>https://loslisang.github.io/blog/p/clash%E5%9C%A8linux%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/</link><pubDate>Sat, 13 Jan 2024 00:09:24 +0800</pubDate><guid>https://loslisang.github.io/blog/p/clash%E5%9C%A8linux%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/</guid><description>&lt;h2 id="值得细讲的点">值得细讲的点
+&lt;/h2>&lt;h3 id="linux的clash因为在github上clash删库跑路了所以现存的clash压缩包">Linux的Clash，因为在github上，clash删库跑路了，所以现存的clash压缩包
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">wget https://github.com/Dreamacro/clash/releases/download/v1.14.0/clash-linux-amd64-v1.14.0.gz
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>建议自己也存一份&lt;/p>
+&lt;p>&lt;code>curl https://glados.rocks/tools/clash-linux.zip -o clash.zip&lt;/code>&lt;/p>
+&lt;h3 id="解压unzip">解压(unzip)
+&lt;/h3>&lt;h3 id="上传配置文件就是机场订阅链接下载下来的哪个yaml文件">上传配置文件(就是机场订阅链接下载下来的哪个yaml文件)
+&lt;/h3>&lt;h3 id="启动">启动
+&lt;/h3>&lt;p>&lt;code>./clash-linux-amd64-v1.10.0 -f glados.yaml -d .&lt;/code>&lt;/p>
+&lt;h3 id="设置环境变量">设置环境变量
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">https_proxy&lt;/span>&lt;span class="o">=&lt;/span>http://127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">http_proxy&lt;/span>&lt;span class="o">=&lt;/span>http://127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">all_proxy&lt;/span>&lt;span class="o">=&lt;/span>socks5://127.0.0.1:7890
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="参考">参考
+&lt;/h2>&lt;p>&lt;a class="link" href="https://blog.iswiftai.com/posts/clash-linux/" target="_blank" rel="noopener"
+>在 Linux 中使用 Clash | CodeSwift (iswiftai.com)&lt;/a>&lt;/p></description></item><item><title>git分布式管理工具使用</title><link>https://loslisang.github.io/blog/p/git%E5%88%86%E5%B8%83%E5%BC%8F%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</link><pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate><guid>https://loslisang.github.io/blog/p/git%E5%88%86%E5%B8%83%E5%BC%8F%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/</guid><description>&lt;h2 id="创建一个git仓库">创建一个git仓库
+&lt;/h2>&lt;p>&lt;code>git init&lt;/code>&lt;/p>
+&lt;p>&lt;code>git add (.)&lt;/code> 提交到暂存区&lt;/p>
+&lt;p>&lt;code>git commit -m &amp;lt;&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git log &amp;lt;--stat&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git diff &amp;lt;commit-id&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git reset --hard &amp;lt;commit-id&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git checkout &amp;lt;commit-id&amp;gt;&lt;/code>&lt;/p>
+&lt;p>&lt;code>git branch&lt;/code>&lt;/p>
+&lt;p>&lt;code>git checkout -b develop&lt;/code>&lt;/p>
+&lt;p>&lt;code>$master git merge develop&lt;/code>&lt;/p>
+&lt;h2 id="git-config">git config
+&lt;/h2>&lt;h3 id="修改某些属性">修改某些属性
+&lt;/h3>&lt;p>&lt;code>git config --global &amp;lt;properity&amp;gt; &amp;lt;value&amp;gt;&lt;/code>&lt;/p>
+&lt;p>eg:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git config --global user.name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global user.email
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global http.sslverify &lt;span class="nb">false&lt;/span> 关闭验证ssl证书
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global http.sslBackend schannel
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="查看属性">查看属性
+&lt;/h3>&lt;p>&lt;code>git config --list --show-origin&lt;/code>&lt;/p>
+&lt;h2 id="git-clone">git clone
+&lt;/h2>&lt;h3 id="携带参数">携带参数
+&lt;/h3>&lt;p>eg:
+&lt;code>git -c http.sslVerify=false clone &amp;lt;URL&amp;gt;&lt;/code>&lt;/p>
+&lt;h2 id="本地仓库和远程仓库绑定远程分支">本地仓库和远程仓库绑定(远程分支)
+&lt;/h2>&lt;p>&lt;code>git remote remove origin&lt;/code>&lt;/p>
+&lt;p>&lt;code>git remote add origin &amp;quot;https://github.com/LosLiSang/loslisang.github.io.git&amp;quot;&lt;/code>&lt;/p>
+&lt;h2 id="参考">参考
+&lt;/h2>&lt;p>&lt;a class="link" href="https://xugaoxiang.com/2021/03/17/git-clone-ssl-certificate-problem-unable-to-get-local-issuer-certificate/" target="_blank" rel="noopener"
+>迷途小书童的Note迷途小书童的Note (xugaoxiang.com)&lt;/a>&lt;/p></description></item></channel></rss>
